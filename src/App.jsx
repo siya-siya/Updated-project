@@ -1,7 +1,6 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/Header";
 import Dashboard from "./pages/Dashboard";
 import Categories from "./components/Categories";
