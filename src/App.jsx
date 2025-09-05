@@ -36,6 +36,7 @@ const App = () => {
             element={
               <>
                 <Dashboard />
+                <categories/>
                 <InfoSection />
                 <AppPromo />
                 <Footer />
