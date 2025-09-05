@@ -1,25 +1,27 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./Components/Header";
 import Dashboard from "./pages/Dashboard";
-import Categories from "./Components/categories";
-import LoginPage from "./pages/Login";
+import Categories from "./Components/Categories";   // ✅ fixed capitalization
+import LoginPage from "./pages/Login";             // ✅ after renaming file to Login.jsx
 import SignIn from "./pages/SignIn";
 import InfoSection from "./Components/InfoSection";
 import AppPromo from "./Components/AppPromo";
 import Footer from "./Components/Footer";
+
 import Pizza from "./pages/Pizza";
 import Burger from "./pages/Burger";
-import Cakes from "./pages/Cake";
+import Cake from "./pages/Cake";                   // ✅ singular
 import Biryani from "./pages/Biryani";
 import Chinese from "./pages/Chinese";
 import Dhokla from "./pages/Dhokla";
 import NorthIndia from "./pages/NorthIndia";
-import { BACKEND_URL } from "./config";
 import Khichdi from "./pages/Khichdi";
 import Instamart from "./Components/Instamart";
 
+import { BACKEND_URL } from "./config";
 
 const App = () => {
   console.log("Backend endpoint:", BACKEND_URL);
@@ -36,7 +38,7 @@ const App = () => {
             element={
               <>
                 <Dashboard />
-                <categories/>
+                <Categories />   {/* ✅ fixed uppercase */}
                 <InfoSection />
                 <AppPromo />
                 <Footer />
@@ -49,13 +51,13 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/pizza" element={<Pizza />} />
           <Route path="/burger" element={<Burger />} />
-          <Route path="/cake" element={<Cakes />} />
+          <Route path="/cake" element={<Cake />} />        {/* ✅ fixed */}
           <Route path="/biryani" element={<Biryani />} />
           <Route path="/chinese" element={<Chinese />} />
           <Route path="/dhokla" element={<Dhokla />} /> 
-          <Route path="/NorthIndia" element={<NorthIndia/>}/>
-          <Route path="/Khichdi" element={<Khichdi/>}/>
-          <Route path="/Instamart" element={<Instamart/>}/>
+          <Route path="/NorthIndia" element={<NorthIndia />} />
+          <Route path="/Khichdi" element={<Khichdi />} />
+          <Route path="/Instamart" element={<Instamart />} />
         </Routes>
       </Router>
     </div>
