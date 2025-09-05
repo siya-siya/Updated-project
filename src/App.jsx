@@ -1,14 +1,14 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Header";
+import Navbar from "./Components/Header";
 import Dashboard from "./pages/Dashboard";
-import Categories from "./components/Categories";
+import Categories from "./Components/Categories";
 import LoginPage from "./pages/Login";
 import SignIn from "./pages/SignIn";
-import InfoSection from "./components/InfoSection";
-import AppPromo from "./components/AppPromo";
-import Footer from "./components/Footer";
+import InfoSection from "./Components/InfoSection";
+import AppPromo from "./Components/AppPromo";
+import Footer from "./Components/Footer";
 import Pizza from "./pages/Pizza";
 import Burger from "./pages/Burger";
 import Cakes from "./pages/Cake";
@@ -18,7 +18,7 @@ import Dhokla from "./pages/Dhokla";
 import NorthIndia from "./pages/NorthIndia";
 import { BACKEND_URL } from "./config";
 import Khichdi from "./pages/Khichdi";
-import Instamart from "./components/Instamart";
+import Instamart from "./Components/Instamart";
 
 
 const App = () => {
