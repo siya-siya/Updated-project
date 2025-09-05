@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./Components/Header";
 import Dashboard from "./pages/Dashboard";
-import Categories from "./Components/Categories";   // ✅ fixed capitalization
-import LoginPage from "./pages/Login";             // ✅ after renaming file to Login.jsx
+import Categories from "./Components/categories";   // ✅ fixed capitalization
+import LoginPage from "./pages/login";             // ✅ after renaming file to Login.jsx
 import SignIn from "./pages/SignIn";
 import InfoSection from "./Components/InfoSection";
 import AppPromo from "./Components/AppPromo";
